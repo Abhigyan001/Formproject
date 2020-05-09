@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Survey Form</title>
+    <style media="screen">
+      h1{
+        font-size: 30px
+      }
+      *{
+        border-radius: 2px !important
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-sm-10 col-md-8 col-lg-6">
+          <h1 class="mb-1" id="title">Survey Form Microverse project</h1>
+          <p class="text-muted" id="description"> A sample form to attend Microverse Classes</p>
+
+          <div class="card shadow-lg border">
+            <div class="card-body">
+              <form id="survey-form">
+                <!-- Name field -->
+                <div class="form-group">
+                  <label class="mb-0" for="name" id="name-label">Name</label>
+                  <input type="text" class="form-control" id="name" required placeholder="Enter your name">
+                </div>
+
+                <!-- Email field -->
+                <div class="form-group">
+                  <label class="mb-0" for="email" id="email-label">Email</label>
+                  <input type="email" class="form-control" id="email" required placeholder="Enter your email">
+                </div>
+
+                <!-- Number field -->
+                <div class="form-group">
+                  <label class="mb-0" for="number" id="number-label">Number</label>
+                  <input type="number" class="form-control" id="number" required min="0" max="1000" placeholder="Enter number">
+                </div>
+
+                <!-- Select menu -->
+                <div class="form-group">
+                  <label class="mb-0" for="dropdown">Pick your favourite</label>
+                  <select class="custom-select" id="dropdown">
+                    <option selected>Select your choice</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value=javascript>JavaScript</option>
+                    <option value="python">Python</option>
+                  </select>
+                </div>
+
+                <!-- Radio buttons -->
+                <div class="form-group">
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="male" name="gender" value="male" class="custom-control-input">
+                    <label class="custom-control-label" for="male">Male</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="female" name="gender" value="female" class="custom-control-input">
+                    <label class="custom-control-label" for="female">Female</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="other" name="gender" value="other" class="custom-control-input">
+                    <label class="custom-control-label" for="other">Other</label>
+                  </div>
+                </div>
+
+                <!-- Checkboxes -->
+                <div class="form-group">
+                  <div class="custom-control custom-checkbox">
+                    <input id="xbox" type="checkbox" value="xbox" class="custom-control-input">
+                    <label class="custom-control-label" for="xbox">XBox</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input id="ps4" type="checkbox" value="ps4" class="custom-control-input">
+                    <label class="custom-control-label" for="ps4">PS4</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input id="nintendo" type="checkbox" value="nintendo" class="custom-control-input">
+                    <label class="custom-control-label" for="nintendo">Nintendo</label>
+                  </div>
+                </div>
+
+                <!-- Comment section -->
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Leave a comment</label>
+                  <textarea class="form-control" id="comment" rows="4"></textarea>
+                </div>
+
+                <input class="btn btn-primary" type="submit" id="submit" value="Submit">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
