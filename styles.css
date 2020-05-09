@@ -1,3 +1,30 @@
+body{
+  max-width: 100 !important;
+}
 h1, p {
-    text-align: center;
+  text-align: center;
+}
+input, select{
+  padding: 10px 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  display: block
+}
+input[id=submit]{
+  padding: 10px 15px;
+  background-color: rgb(107, 45, 57);
+  border-radius: 4px;
+  display: inline;
+  width: auto;
+  font-size: 20px;
+  color: #fff
+}
+#survey-form{
+  border: 1px solid #eee;
+  width: 500px;
+  margin: auto;
+  padding: 10px;
+}
+#survey-form p{
+  text-align: left;
 }
