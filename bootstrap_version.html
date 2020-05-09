@@ -29,25 +29,25 @@
               <form id="survey-form">
                 <!-- Name field -->
                 <div class="form-group">
-                  <label class="mb-0" for="name" id="name-label">Name</label>
+                  <label class="mb-1 font-weight-bold" for="name" id="name-label">Name</label>
                   <input type="text" class="form-control" id="name" required placeholder="Enter your name">
                 </div>
 
                 <!-- Email field -->
                 <div class="form-group">
-                  <label class="mb-0" for="email" id="email-label">Email</label>
+                  <label class="mb-1 font-weight-bold" for="email" id="email-label">Email</label>
                   <input type="email" class="form-control" id="email" required placeholder="Enter your email">
                 </div>
 
                 <!-- Number field -->
                 <div class="form-group">
-                  <label class="mb-0" for="number" id="number-label">Number</label>
+                  <label class="mb-1 font-weight-bold" for="number" id="number-label">Number</label>
                   <input type="number" class="form-control" id="number" required min="0" max="1000" placeholder="Enter number">
                 </div>
 
                 <!-- Select menu -->
                 <div class="form-group">
-                  <label class="mb-0" for="dropdown">Pick your favourite</label>
+                  <label class="mb-1 font-weight-bold" for="dropdown">Pick your favourite</label>
                   <select class="custom-select" id="dropdown">
                     <option selected>Select your choice</option>
                     <option value="html">HTML</option>
@@ -59,6 +59,7 @@
 
                 <!-- Radio buttons -->
                 <div class="form-group">
+                  <label class="mr-1 mb-1 font-weight-bold">Select gender:</label>
                   <div class="custom-control custom-radio custom-control-inline">
                     <input type="radio" id="male" name="gender" value="male" class="custom-control-input">
                     <label class="custom-control-label" for="male">Male</label>
@@ -75,6 +76,7 @@
 
                 <!-- Checkboxes -->
                 <div class="form-group">
+                  <label class="mb-1 font-weight-bold">Favourite console:</label>
                   <div class="custom-control custom-checkbox">
                     <input id="xbox" type="checkbox" value="xbox" class="custom-control-input">
                     <label class="custom-control-label" for="xbox">XBox</label>
@@ -91,7 +93,7 @@
 
                 <!-- Comment section -->
                 <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Leave a comment</label>
+                  <label class="mb-1 font-weight-bold" for="comment">Leave a comment</label>
                   <textarea class="form-control" id="comment" rows="4"></textarea>
                 </div>
 
